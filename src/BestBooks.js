@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import Carousel from 'react-bootstrap/Carousel';
+import "./BestBooks.css"
 
 class BestBooks extends React.Component {
   constructor(props) {
@@ -42,7 +43,7 @@ class BestBooks extends React.Component {
             return <Carousel.Item key={book._id}>
             <img
               className="d-block w-100"
-              src="holder.js/800x400?text=First slide&bg=373940"
+              src="https://images.unsplash.com/photo-1526243741027-444d633d7365?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGJvb2tzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
               alt="First slide"
             />
             <Carousel.Caption>
