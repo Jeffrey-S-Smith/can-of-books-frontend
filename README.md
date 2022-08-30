@@ -1,34 +1,73 @@
 # Project Name  Can of Books App
 
 **Author**: Jeffrey Smith & Brooke Heck
-**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
+
+**Version**: 1.0.0 
+
+[Deployed Site](https://venerable-kelpie-5a4f37.netlify.app/)
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
+This application is used to store book information. It uses React to create a GUI that serves as virtual bookshelf for a user. The app queries a server that is connected to a database that house all the book information.
 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+Run the npm install command to download the necessary npm modules. This includes react, react bootstrap, and axios. Also refer to the sample env file to see what environment variables you will need set.
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+This is a React application. The main components used are Navbar and Carousel. The navbar also uses react router so users can be routed to the homepage and the about us page. The application uses axios to send requests to a back end server.
 
 ## Change Log
-<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
-
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+01-01-2001 4:59pm - Application now has GUI that includes a carousel to display books and a navbar that links to homepage and about page.
 
 ## Estimates
-<!-- See below -->
+
+### Lab 11
+***Name of feature: GET Request to Receive Books***
+
+Estimate of time needed to complete: 1 hr
+
+Start time: 1530
+
+Finish time: 1615
+
+Actual time needed to complete: .75 hr
+
+</br>
+
+***Name of feature: Create Carousel***
+
+Estimate of time needed to complete: .5 hr
+
+Start time: 1615
+
+Finish time: 1500
+
+Actual time needed to complete: .75 hr
+
+</br>
+
+***Name of feature: Create Carousel***
+
+Estimate of time needed to complete: .5 hr
+
+Start time: 1615
+
+Finish time: 1700
+
+Actual time needed to complete: .75 hr
+
+</br>
+
+***Name of feature: Create About Us***
+
+Estimate of time needed to complete: .5 hr
+
+Start time: 1700
+
+Finish time: 1730
+
+Actual time needed to complete: .5 hr
 
 ## Credit and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+- Collaboration with [Brooke Heck](https://github.com/BrookeHeck)
 
-Name of feature: ________________________________
-
-Estimate of time needed to complete: _____
-
-Start time: _____
-
-Finish time: _____
-
-Actual time needed to complete: _____
+- [Bookshelf Photo from Unsplash](https://images.unsplash.com/photo-1526243741027-444d633d7365?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGJvb2tzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60)
