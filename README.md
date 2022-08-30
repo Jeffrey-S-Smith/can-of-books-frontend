@@ -2,7 +2,7 @@
 
 **Author**: Jeffrey Smith & Brooke Heck
 
-**Version**: 1.0.0 
+**Version**: 2.0.0 
 
 [Deployed Site](https://venerable-kelpie-5a4f37.netlify.app/)
 
@@ -16,7 +16,9 @@ Run the npm install command to download the necessary npm modules. This includes
 This is a React application. The main components used are Navbar and Carousel. The navbar also uses react router so users can be routed to the homepage and the about us page. The application uses axios to send requests to a back end server.
 
 ## Change Log
-01-01-2001 4:59pm - Application now has GUI that includes a carousel to display books and a navbar that links to homepage and about page.
+08-29-2022 4:59pm - Application now has GUI that includes a carousel to display books and a navbar that links to homepage and about page.
+
+08-30-2022 4:59pm - Application allows user to add and delete books from homepage.
 
 ## Estimates
 
@@ -66,6 +68,33 @@ Start time: 1700
 Finish time: 1730
 
 Actual time needed to complete: .5 hr
+
+</br>
+
+### Lab 12
+***Name of feature: Allow user to add book***
+
+Estimate of time needed to complete: 1 hr
+
+Start time:1400
+
+Finish time: 1445
+
+Actual time needed to complete: .75 hr
+
+</br>
+
+***Name of feature: Allow user to delete book***
+
+Estimate of time needed to complete: 1 hr
+
+Start time:1445
+
+Finish time: 1530
+
+Actual time needed to complete: .75 hr
+
+</br>
 
 ## Credit and Collaborations
 - [Bookshelf Photo from Unsplash](https://images.unsplash.com/photo-1526243741027-444d633d7365?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGJvb2tzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60)
