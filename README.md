@@ -68,6 +68,5 @@ Finish time: 1730
 Actual time needed to complete: .5 hr
 
 ## Credit and Collaborations
-- Collaboration with [Brooke Heck](https://github.com/BrookeHeck)
-
+- [Bookshelf Photo from Unsplash](https://images.unsplash.com/photo-1526243741027-444d633d7365?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGJvb2tzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60)
 - [Bookshelf Photo from Unsplash](https://images.unsplash.com/photo-1526243741027-444d633d7365?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGJvb2tzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60)
