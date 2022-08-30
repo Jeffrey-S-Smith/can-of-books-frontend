@@ -34,11 +34,11 @@ class BestBooks extends React.Component {
 
     console.log('hello');
     return (
-      <>
+      <div id='bestBooks'>
         <h2>My Essential Lifelong Learning &amp; Formation Shelf</h2>
 
         {this.state.books.length ? (
-          <Carousel style={{width: '75vw', height: 'auto'}}>
+          <Carousel>
             { this.state.books.map(book => {
             return <Carousel.Item key={book._id}>
             <img
@@ -57,7 +57,7 @@ class BestBooks extends React.Component {
         ) : (
           <h3>No Books Found :(</h3>
         )}
-      </>
+      </div>
     )
   }
 }
