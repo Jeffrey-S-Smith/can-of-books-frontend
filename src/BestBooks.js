@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import UpdateModal from './UpdateModal'
 import Carousel from 'react-bootstrap/Carousel';
 import Modal from 'react-bootstrap/Modal'
 import Form from 'react-bootstrap/Form'
@@ -12,7 +13,33 @@ class BestBooks extends React.Component {
     this.state = {
       books: [],
       show: false,
+      showUpdateForm: false,
+      selectedBook: {},
     }
+  }
+
+  waitToUpDate = () => {console.log('Done UpdatingBooks');}
+
+  upDateBook = async (book)=>{
+    console.log(this.state.books);
+    try {
+      let url = `${process.env.REACT_APP_SERVER}/books/${book._id}` 
+      let upDatedBook = await axios.put(url, book);
+      let bookArr = this.state.books.map(singleBook => {
+        return singleBook._id === upDatedBook.data._id ? upDatedBook.data: singleBook;
+      })
+      console.log(bookArr);
+      this.setState({books: bookArr}, this.waitToUpDate)
+    
+
+    } catch(err) {
+      console.log(err);
+
+    }
+  }
+
+  closeUpdateForm =()=>{
+    this.setState({showUpdateForm: false});
   }
 
   handleShowModal =() => {
@@ -68,6 +95,11 @@ class BestBooks extends React.Component {
     }
   }
 
+  showUpdateModal =(selectedBook) =>{
+    this.setState({showUpdateForm: true, selectedBook: selectedBook})
+
+  }
+
   componentDidMount(){
     this.getAllBooks();
   }
@@ -93,6 +125,7 @@ class BestBooks extends React.Component {
                <h3>{book.title}</h3>
                <p>{book.description}</p>
                <Button onClick={()=> {this.handleDeleteBook(book._id)}}>Delete</Button>
+               <Button onClick={()=> {this.showUpdateModal(book)}}>Update</Button>
              </Carousel.Caption>
            </Carousel.Item>  
 }) }
@@ -103,6 +136,8 @@ class BestBooks extends React.Component {
         )}
 
         <FormModal show = {this.state.show} handleShowModal={this.handleShowModal} handleCloseModal={this.handleCloseModal} handleCreateBook={this.handleCreateBook}/>
+
+        <UpdateModal showUpdateModal={this.showUpdateModal} closeUpdateForm={this.closeUpdateForm} showUpdateForm={this.state.showUpdateForm} selectedBook={this.state.selectedBook} upDateBook={this.upDateBook}/>
       </div>
     )
   }
