@@ -2,7 +2,7 @@
 
 **Author**: Jeffrey Smith & Brooke Heck
 
-**Version**: 2.0.0 
+**Version**: 3.0.0 
 
 [Deployed Site](https://venerable-kelpie-5a4f37.netlify.app/)
 
@@ -91,6 +91,19 @@ Estimate of time needed to complete: 1 hr
 Start time:1445
 
 Finish time: 1530
+
+Actual time needed to complete: .75 hr
+
+</br>
+
+### Lab 13
+***Name of feature: GET Request to Receive Books***
+
+Estimate of time needed to complete: 1 hr
+
+Start time: 1300
+
+Finish time: 1500
 
 Actual time needed to complete: .75 hr
 
